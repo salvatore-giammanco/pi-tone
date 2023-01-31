@@ -1,0 +1,15 @@
+[package]
+name = "pi_tone"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rppal = "0.14.1"
+
+[package.metadata.cross.build]
+xargo = true
+build-std = true
+default-target = "armv7-unknown-linux-gnueabihf"
+pre-build = ["apt-get update"] # can also be the path to a file to run
