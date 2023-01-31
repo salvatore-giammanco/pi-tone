@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/salvatore-giammanco/pi-tone">
-    <img src="https://i.imgur.com/oX91gdh.png" alt="Logo" height="140" width="543">
+    <img src="https://i.imgur.com/oX91gdh.png" alt="Logo" width="300">
   </a>
 </p>
 
