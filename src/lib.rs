@@ -7,7 +7,6 @@ use rppal::pwm::{Channel, Pwm};
 use crate::pitch::Pitch;
 
 pub mod pitch;
-// Fare una struct PiTone, quando fai play, parte un thread. quando fai stop ti infili e stoppi (coi channel dei thread)
 
 pub struct PiTone {
     pwm: Pwm,
