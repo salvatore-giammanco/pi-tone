@@ -1,5 +1,4 @@
 use std::error::Error;
-use std::thread;
 use std::time::{Duration, Instant};
 
 use rppal::pwm::{Channel, Pwm};
@@ -34,7 +33,6 @@ impl PiTone {
             self.pwm.set_frequency(frequency, 0.5)?;
             self.pwm.enable()?;   
         }
-        thread::sleep(duration);
         loop {
             if start.elapsed() >= duration {
                 self.pwm.disable()?;
